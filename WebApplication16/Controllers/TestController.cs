@@ -23,5 +23,12 @@ namespace WebApplication16.Controllers
             var rand = new Random();
             return Ok(rand.Next(100));
         }
+
+
+        [HttpGet("test")]
+        public IActionResult Test()
+        {
+            return Ok("test");
+        }
     }
 }
