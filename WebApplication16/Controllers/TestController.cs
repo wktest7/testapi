@@ -16,5 +16,12 @@ namespace WebApplication16.Controllers
         {
             return Ok(Guid.NewGuid().ToString());
         }
+
+        [HttpGet("number")]
+        public IActionResult GetNumber()
+        {
+            var rand = new Random();
+            return Ok(rand.Next(100));
+        }
     }
 }
